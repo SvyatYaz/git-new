@@ -1,0 +1,1 @@
+<h1 style="margin-top: 30px; text-align: center;">Ваш заказ  оформлен  под номером <?=$_GET["zakaz"]?> Перейдите в <a href="<?echo SITE_DIR?>personal/">Личный кабинет</a> для отслеживания заказа</h1>

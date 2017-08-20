@@ -1,0 +1,24 @@
+<?
+IncludeModuleLangFile(__FILE__);
+
+class CSitelisardsite
+{
+    function ShowPanel()
+    {
+        if ($GLOBALS["USER"]->IsAdmin() && COption::GetOptionString("main", "wizard_solution", "", SITE_ID) == "lisardsite")
+        {
+            $GLOBALS["APPLICATION"]->AddPanelButton(array(
+                "HREF"      => "/bitrix/admin/wizard_install.php?lang=ru&wizardName=intops:lisardsite&wizardSiteID=".SITE_ID."&".bitrix_sessid_get(),
+                "ID"        => "lisardsite",
+                "ICON"      => "bx-panel-site-wizard-icon",
+                "MAIN_SORT" => 2500,
+                "TYPE"      => "BIG",
+                "SORT"      => 10,
+                "ALT"       => GetMessage("INTOPS_LIZARDSITE_DESCRIPTION"),
+                "TEXT"      => GetMessage("INTOPS_LIZARDSITE_NAME"),
+                "MENU"      => array(),
+            ));
+        }
+    }
+}
+?>

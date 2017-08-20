@@ -1,0 +1,5 @@
+<?
+$MESS["AVTOSERVICE_TYPE_NAME"] = "Много мебели";
+$MESS["AVTOSERVICE_ELEMENT_NAME"] = "Элементы";
+$MESS["AVTOSERVICE_SECTION_NAME"] = "Разделы";
+?>

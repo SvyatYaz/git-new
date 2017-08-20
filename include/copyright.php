@@ -1,0 +1,1 @@
+<p>&copy; 2014. <a href="http://bkv-soft.com">Создание сайта</a> bkv-soft.com.</p>

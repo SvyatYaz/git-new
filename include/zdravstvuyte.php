@@ -1,0 +1,1 @@
+Здравствуйте  <?=$USER->GetFullName()?><br />

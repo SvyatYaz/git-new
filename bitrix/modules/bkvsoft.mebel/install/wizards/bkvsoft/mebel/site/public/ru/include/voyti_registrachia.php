@@ -1,0 +1,1 @@
+<a href="<?echo SITE_DIR?>login/">Войти</a> / <a href="<?echo SITE_DIR?>registracia/">Регистация</a>

@@ -1,0 +1,1 @@
+<h1 style="margin-top: 30px; text-align: center;">Корзина пуста! <br /> Пейдите в каталог и выберите  товар</h1>
