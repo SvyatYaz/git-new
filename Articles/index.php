@@ -2,6 +2,15 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Title");
 ?>
+<?
+global $arrFilter;
+$fromdate = new DateTime($_GET["fromdate"]);
+$todate = new DateTime($_GET["todate"]);
+if($_GET["fromdate"] && $_GET["todate"]) {
+  $from = $fromdate->format("d.m.Y");
+  $to =$todate->format("d.m.Y");
+}
+$arrFilter = Array(">=DATE_ACTIVE_FROM" => $from, "<=DATE_ACTIVE_FROM" => $to) ?>
 
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.list",

@@ -1,9 +1,8 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001503352131';
-$dateexpire = '001503355731';
-$ser_content = 'a:2:{s:7:"CONTENT";s:1368:"
-<div>
+$datecreate = '001503352365';
+$dateexpire = '001503355965';
+$ser_content = 'a:2:{s:7:"CONTENT";s:1366:"<div>
 	<form method="get">
 		<a>Дата от:  <input type="date" name="fromdate"></a>
 		<a>Дата по:  <input type="date" name="todate"></a>
@@ -14,7 +13,6 @@ $ser_content = 'a:2:{s:7:"CONTENT";s:1368:"
 <a href="?sort=name">По наименованию </a>
 <a href="?sort=PROPERTY_AVTOR">По автору </a>
 <a href="?sort=ACTIVE_FROM">По дате </a>
-
 
 <div class="news-list">
 

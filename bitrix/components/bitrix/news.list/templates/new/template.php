@@ -1,5 +1,12 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 ?>
+<div>
+	<form method="get">
+		<a>Дата от:  <input type="date" name="fromdate"></a>
+		<a>Дата по:  <input type="date" name="todate"></a>
+		<input type="submit" value="поиск">
+	</form>
+</div>
 
 <a href="?sort=name">По наименованию </a>
 <a href="?sort=PROPERTY_AVTOR">По автору </a>
