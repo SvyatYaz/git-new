@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001503329089';
-$dateexpire = '001503329389';
+$datecreate = '001503352631';
+$dateexpire = '001503352931';
 $ser_content = 'a:2:{s:7:"CONTENT";s:2405:"<article class="container oneslider woo-slider slider">
         <ul data-auto="true">           
                 		                <li class="bg-sl-11 medium-size" id="bx_4665576_20" style="background: url(/upload/iblock/b42/b4287ebf66ecbdc819a6fe6f10d03932.png);">
