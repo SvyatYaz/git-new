@@ -36,6 +36,12 @@ $arUrlRewrite = array(
 		"ID" => "bitrix:catalog",
 		"PATH" => "/shop/index.php",
 	),
+	array(
+		"CONDITION" => "#^/articles/([a-zA-Z_0-9-]+)/(\$|\\?.*)#",
+		"RULE" => "ELEMENT_CODE=\$1",
+		"ID" => "",
+		"PATH" => "/Articles/detail.php",
+	),
 );
 
 ?>

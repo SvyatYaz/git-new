@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/templates/mebel_default/components//bitrix/system.pagenavigation/.default/style.css" => "1503237741744",), 'CUR_SEL_CNT' => '12', 'CUR_IE_CNT' => '0'); ?>
