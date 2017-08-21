@@ -1,6 +1,9 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 ?>
 
+<a href="?sort=name">По наименованию </a>
+<a href="?sort=PROPERTY_AVTOR">По автору </a>
+<a href="?sort=ACTIVE_FROM">По дате </a>
 
 <div class="news-list">
 
