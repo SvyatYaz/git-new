@@ -2,7 +2,6 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Title");
 ?>
-
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
 	"new",
@@ -17,11 +16,11 @@ $APPLICATION->SetTitle("Title");
 		"NEWS_COUNT" => "20",
 		"SORT_BY1" => $_REQUEST["sort"],
 		"SORT_ORDER1" => "DESC",
-		"SORT_BY2" => "SORT",
+		"SORT_BY2" => "PROPERTY_AVTOR_VALUE",
 		"SORT_ORDER2" => "ASC",
-		"FILTER_NAME" => "",
+		"FILTER_NAME" => "arrFilter",
 		"FIELD_CODE" => array(
-			0 => "ID",
+			0 => "DATE_ACTIVE_FROM",
 			1 => "",
 		),
 		"PROPERTY_CODE" => array(
@@ -33,7 +32,7 @@ $APPLICATION->SetTitle("Title");
 		"CHECK_DATES" => "Y",
 		"DETAIL_URL" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"ACTIVE_DATE_FORMAT" => "Y.m.d",
 		"SET_TITLE" => "Y",
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_META_KEYWORDS" => "Y",
@@ -67,11 +66,10 @@ $APPLICATION->SetTitle("Title");
 		"AJAX_OPTION_STYLE" => "Y",
 		"AJAX_OPTION_HISTORY" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
-		"COMPONENT_TEMPLATE" => ".default",
+		"COMPONENT_TEMPLATE" => "new",
 		"STRICT_SECTION_CHECK" => "N",
 		"FILE_404" => ""
 	),
-
 	false
 );?>
 

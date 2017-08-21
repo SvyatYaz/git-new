@@ -1,7 +1,6 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 ?>
 
-<!-- <a href="?sort=name">По наименованию </a> -->
 
 <div class="news-list">
 
@@ -31,14 +30,16 @@
 
 
 <div>
-<? if (isset($arItem["NAME"])):?>
+<? if (!empty($arItem["NAME"])):?>
 <?= $arItem["PREVIEW_TEXT"];?>
 <?endif?>
 
 
-<?if(isset($arItem["PREVIEW_TEXT"])):?>
+<?if(!empty($arItem["PREVIEW_TEXT"])):?>
 <p> <h4> <?=$arItem["PROPERTIES"]["AVTOR"]["VALUE"]?> </p> </h4>
 <?endif;?>
+<?=$arItem["ACTIVE_FROM"]?>
+
 </div>
 <?endforeach;?>
 <?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
